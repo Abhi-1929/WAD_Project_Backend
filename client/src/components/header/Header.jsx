@@ -1,50 +1,44 @@
 import "./header.css";
 import Carousel from "react-bootstrap/Carousel";
-import carouselImage1 from "./../../assets/Carousel-1.jpg";
-import carouselImage2 from "./../../assets/Carousel-2.jpg";
+
 export default function Header() {
   return (
     <div>
-     <div style={{height:"30px" }}>
-     <Carousel fade>
+      <Carousel fade>
         <Carousel.Item>
           <img
             className="d-block w-100"
-             src={carouselImage1}
+            src="https://source.unsplash.com/1400x400/?creative"
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Create Your Blogs</h3>
+            <p>There's a way to do it better - find it.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-             src={carouselImage2}
+            src="https://source.unsplash.com/1400x400/?creative,explore"
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Learn with Others</h3>
+            <p>Never stop learning, because Life never stops teaching.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-             src={carouselImage1}
+            src="https://source.unsplash.com/1400x400/?creative,idea"
             alt="Third slide"
           />
-
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>Discover the Worlds Through Blogs</h3>
+            <p>Get Closer to your Goals</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-     </div>
     </div>
   );
 }

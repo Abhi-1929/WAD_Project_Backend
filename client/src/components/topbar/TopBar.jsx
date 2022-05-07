@@ -15,7 +15,6 @@ export default function TopBar() {
     <div className="top">
       <div className="topLeft">
         <h1>BLOGS</h1>
-        
       </div>
       <div className="topCenter">
         <ul className="topList">
