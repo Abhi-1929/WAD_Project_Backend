@@ -5,18 +5,31 @@ export default function About() {
     <>
       <div className="d-flex flex-row bd-highlight">
         <div className="p-2 flex-grow-1 bd-highlight">
-          <h2>Blogging Site</h2>
-          <h6>
-            Features of This Site.
-            <ul>
-              <li>User can Create this account</li>
-              <li>
-                User can Share the Ideas, Knowledge, Experience with whole
-                world.
-              </li>
-              <li>Connect with other User.</li>
-            </ul>
-          </h6>
+          <div className="container m-4">
+            <h2>Blogging Site</h2>
+            <h6>
+              Features of This Site.
+              <ul>
+                <li>Blog creaters can create there account on this site.</li>
+                <li>
+                  User can Share the Ideas, Knowledge, Experience with whole
+                  world.
+                </li>
+                <li>All other users can freely access to the blogs.</li>
+                <li>Connect with other User.</li>
+                <li>Discover all the blogs on the Home Page.</li>
+              </ul>
+              <b>
+                Created by:
+                <ul>
+                  <li> Suyog Patil</li>
+                  <li> Pranay Mule</li>
+                  <li> Abhishek Khairnar</li>
+                  <li> Harshal Nahire</li>
+                </ul>
+              </b>
+            </h6>
+          </div>
         </div>
         <div className="p-2 pl-2">
           <div className="headerTitles bd-highlight">
