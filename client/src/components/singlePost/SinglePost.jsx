@@ -41,7 +41,7 @@ export default function SinglePost() {
         title,
         desc,
       });
-      setUpdateMode(false)
+      setUpdateMode(false);
     } catch (err) {}
   };
 

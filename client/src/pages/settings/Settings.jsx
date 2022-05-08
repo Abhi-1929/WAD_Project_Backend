@@ -1,5 +1,4 @@
 import "./settings.css";
-import Sidebar from "../../components/sidebar/Sidebar";
 import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
 import axios from "axios";
@@ -12,7 +11,7 @@ export default function Settings() {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5000/images/"
+  const PF = "http://localhost:5000/images/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -52,7 +51,13 @@ export default function Settings() {
           <label>Profile Picture</label>
           <div className="settingsPP">
             <img
-              src={file ? URL.createObjectURL(file) : PF+user.profilePic}
+              src={
+                file
+                  ? URL.createObjectURL(file)
+                  : user.profilePic
+                  ? PF + user.profilePic
+                  : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+              }
               alt=""
             />
             <label htmlFor="fileInput">
@@ -94,7 +99,6 @@ export default function Settings() {
           )}
         </form>
       </div>
-      <Sidebar />
     </div>
   );
 }
